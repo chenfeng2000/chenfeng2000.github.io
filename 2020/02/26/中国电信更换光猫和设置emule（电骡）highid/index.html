@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.0.0">
+<meta name="generator" content="Hexo 6.3.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -46,24 +46,20 @@
   };
 </script>
 
-  <meta name="description" content="缘起家里的老光猫大约是15年的时候升级光纤时配置的，型号是华为HGU421N V3。18年升级200M光纤，感觉网络没有质的提升。最近看到电信的促销方案，又去营业厅将200M升级为300M。问了光猫的事情，工作人员说如果是非千兆光猫，可以申请更换。HGU421N V3的性能，网上没有准确的说法，一般都认为它是300M光猫。 确认老光猫的性能之后，联系了电信10000。技术人员跟我说，如果通过电信更">
+  <meta name="description" content="缘起 家里的老光猫大约是15年的时候升级光纤时配置的，型号是华为HGU421N V3。18年升级200M光纤，感觉网络没有质的提升。最近看到电信的促销方案，又去营业厅将200M升级为300M。问了光猫的事情，工作人员说如果是非千兆光猫，可以申请更换。HGU421N V3的性能，网上没有准确的说法，一般都认为它是300M光猫。 确认老光猫的性能之后，联系了电信10000。技术人员跟我说，如果">
 <meta property="og:type" content="article">
 <meta property="og:title" content="中国电信更换光猫和设置emule（电骡）highid">
 <meta property="og:url" content="https://chenfeng2000.github.io/2020/02/26/%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/index.html">
 <meta property="og:site_name" content="Chen Feng">
-<meta property="og:description" content="缘起家里的老光猫大约是15年的时候升级光纤时配置的，型号是华为HGU421N V3。18年升级200M光纤，感觉网络没有质的提升。最近看到电信的促销方案，又去营业厅将200M升级为300M。问了光猫的事情，工作人员说如果是非千兆光猫，可以申请更换。HGU421N V3的性能，网上没有准确的说法，一般都认为它是300M光猫。 确认老光猫的性能之后，联系了电信10000。技术人员跟我说，如果通过电信更">
+<meta property="og:description" content="缘起 家里的老光猫大约是15年的时候升级光纤时配置的，型号是华为HGU421N V3。18年升级200M光纤，感觉网络没有质的提升。最近看到电信的促销方案，又去营业厅将200M升级为300M。问了光猫的事情，工作人员说如果是非千兆光猫，可以申请更换。HGU421N V3的性能，网上没有准确的说法，一般都认为它是300M光猫。 确认老光猫的性能之后，联系了电信10000。技术人员跟我说，如果">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://chenfeng2000.github.io/2020/02/26/%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/WAN%E8%AE%BE%E7%BD%AE.png">
-<meta property="og:image" content="https://chenfeng2000.github.io/2020/02/26/%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/WAN%E4%BF%A1%E6%81%AF.png">
-<meta property="og:image" content="https://chenfeng2000.github.io/2020/02/26/%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/%E5%85%AC%E7%BD%91IP.png">
 <meta property="article:published_time" content="2020-02-25T16:24:41.000Z">
-<meta property="article:modified_time" content="2020-02-26T05:52:39.196Z">
+<meta property="article:modified_time" content="2023-04-14T06:36:38.930Z">
 <meta property="article:author" content="Chen Feng">
 <meta property="article:tag" content="网络设置">
 <meta property="article:tag" content="IPV6">
 <meta property="article:tag" content="emule">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://chenfeng2000.github.io/2020/02/26/%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/WAN%E8%AE%BE%E7%BD%AE.png">
 
 <link rel="canonical" href="https://chenfeng2000.github.io/2020/02/26/%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/">
 
@@ -145,14 +141,19 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
-        <li class="menu-item menu-item-archives">
+        <li class="menu-item menu-item-categories">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
     <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -208,10 +209,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-02-26 00:24:41 / 修改时间：13:52:39" itemprop="dateCreated datePublished" datetime="2020-02-26T00:24:41+08:00">2020-02-26</time>
+              <time title="创建时间：2020-02-26 00:24:41" itemprop="dateCreated datePublished" datetime="2020-02-26T00:24:41+08:00">2020-02-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-04-14 14:36:38" itemprop="dateModified" datetime="2023-04-14T14:36:38+08:00">2023-04-14</time>
+              </span>
 
           
 
@@ -224,28 +231,52 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h1><p>家里的老光猫大约是15年的时候升级光纤时配置的，型号是华为HGU421N V3。18年升级200M光纤，感觉网络没有质的提升。最近看到电信的促销方案，又去营业厅将200M升级为300M。问了光猫的事情，工作人员说如果是非千兆光猫，可以申请更换。HGU421N V3的性能，网上没有准确的说法，一般都认为它是300M光猫。</p>
+        <h1 id="缘起">缘起</h1>
+<p>家里的老光猫大约是15年的时候升级光纤时配置的，型号是华为HGU421N
+V3。18年升级200M光纤，感觉网络没有质的提升。最近看到电信的促销方案，又去营业厅将200M升级为300M。问了光猫的事情，工作人员说如果是非千兆光猫，可以申请更换。HGU421N
+V3的性能，网上没有准确的说法，一般都认为它是300M光猫。</p>
 <p>确认老光猫的性能之后，联系了电信10000。技术人员跟我说，如果通过电信更换光猫，需要交99元，而且换到手的千兆光猫是二手的良品，并且产权仍归电信所有。我问能否自行更换光猫，对方表示可以，并且给了loid和密码（实际上，我很早之前就拿到自己账户的loid和密码，网上说loid是一串12-20位的字符，但我的loid只有11位，搞的我一直不是很确定）。</p>
-<h1 id="事前准备"><a href="#事前准备" class="headerlink" title="事前准备"></a>事前准备</h1><p>首先，自行更换光猫必须要有loid和密码。淘宝上有大量的二手和全新光猫出售，卖家都在页面上说明必须要有loid（也叫做逻辑id）和密码。网上的说法是只要你向客服要，电信都会给你。</p>
-<span id="more"></span> 
-
+<h1 id="事前准备">事前准备</h1>
+<p>首先，自行更换光猫必须要有loid和密码。淘宝上有大量的二手和全新光猫出售，卖家都在页面上说明必须要有loid（也叫做逻辑id）和密码。网上的说法是只要你向客服要，电信都会给你。
+<span id="more"></span></p>
 <p>其次，必须有上网账户（我的账户是区号+固定电话号）和上网密码。如果忘记账户和密码信息，可以在电信网上营业厅重置。</p>
-<p>最后，根据家里光纤接口的类型（epon还是gpon），买一台千兆光猫。我选了二手的<strong>华为 HS8145V5</strong>，这可能是现在淘宝上最常见的千兆光猫，入手价格是170元。购买时要和卖家多沟通，确认对方设备能否用于自家光纤，以免入手后没办法使用，费时费力。</p>
-<h1 id="光猫设置"><a href="#光猫设置" class="headerlink" title="光猫设置"></a>光猫设置</h1><h2 id="入网设置"><a href="#入网设置" class="headerlink" title="入网设置"></a>入网设置</h2><p>卖家一般会提供教程，告诉你应该如何进入后台和设置各项参数（过程中要用到loid和密码，上网账户和上网密码）。设置非常简单，没有意外的话，大约5分钟就能搞定。</p>
+<p>最后，根据家里光纤接口的类型（epon还是gpon），买一台千兆光猫。我选了二手的<strong>华为
+HS8145V5</strong>，这可能是现在淘宝上最常见的千兆光猫，入手价格是170元。购买时要和卖家多沟通，确认对方设备能否用于自家光纤，以免入手后没办法使用，费时费力。</p>
+<h1 id="光猫设置">光猫设置</h1>
+<h2 id="入网设置">入网设置</h2>
+<p>卖家一般会提供教程，告诉你应该如何进入后台和设置各项参数（过程中要用到loid和密码，上网账户和上网密码）。设置非常简单，没有意外的话，大约5分钟就能搞定。</p>
 <p>我自己设置完后，连不上网。联系卖家，卖家人不错，还通过微信视频指导。问题出在一项参数的设置上，之前卖家让我不用设置，实际上是要设置的。设置完成之后，便能正常连入网络。</p>
-<h2 id="IPV6设置"><a href="#IPV6设置" class="headerlink" title="IPV6设置"></a>IPV6设置</h2><h3 id="WAN设置"><a href="#WAN设置" class="headerlink" title="WAN设置"></a>WAN设置</h3><p>IPV6正成为主流，不少网站和APP都开始支持IPV6。卖家只提供了光猫IPV4的设置教程，不过他告诉我，可以在光猫的WAN设置中，将协议类型改为<code>IPV4/IPV6</code>。我自己将IPV4的部分仍按原来卖家教程进行设置，IPV6依光猫默认参数，不做改动。没想到，一次就成功了。</p>
-<p><img src="%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/WAN%E8%AE%BE%E7%BD%AE.png"></p>
-<h3 id="WAN信息"><a href="#WAN信息" class="headerlink" title="WAN信息"></a>WAN信息</h3><p>如果<code>系统信息-WAN信息</code>的显示和下图类似，状态是<code>Connected</code>，并且有IP地址，说明WAN设置成功。可以访问<a href="ipv6.baidu.com">百度IPV6</a>做下测试，如果页面没有异常提示，说明IPV6设置成功。</p>
-<p><img src="%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/WAN%E4%BF%A1%E6%81%AF.png"></p>
-<h1 id="设置emule（电骡）"><a href="#设置emule（电骡）" class="headerlink" title="设置emule（电骡）"></a>设置emule（电骡）</h1><p>这次更换光猫最大的惊喜是<strong>新光猫能直接识别华为荣耀电力猫所连接的设备。</strong> 由于家里网络布线的问题，我一直都用华为荣耀电力猫。电脑通过wifi连接电力猫，再通过电力猫连接光猫。因为网络是转接的，我之前要对老光猫进行设置，就必须将电脑拿到客厅去连接老光猫的wifi，才能进入老光猫后台。这次换新光猫之后，发现新光猫能识别电力猫所连接的所有设备，并直接给这些设备分配局域网地址。即便连接的是电力猫的无线网络，也能直接进光猫的后台。</p>
-<p>网络能直连，意味着可以做端口映射。我以前是emule（电骡）深度用户，老光猫被电信限制，普通管理员账户根本没办法设置端口映射，导致emule一直是low id，基本没法用。新光猫的卖家直接给了超级管理员账户，可以自由设置DMZ主机、端口映射和UPNP功能。</p>
-<h2 id="内网和公网IP问题"><a href="#内网和公网IP问题" class="headerlink" title="内网和公网IP问题"></a>内网和公网IP问题</h2><p>按照先前的经验，逐一设置DMZ主机、端口映射和UPnP，但TCP端口直连仍然失败，ed2k服务器连接的结果lowid。感谢伟大的互联网，有网友说是因为IPV4的公网地址不足，电信现在给用户分配的都是内网IP。如果是内网IP，你再怎么设置DMZ主机或者端口映射，emule也仍然是low id。</p>
-<h3 id="验证内网ip"><a href="#验证内网ip" class="headerlink" title="验证内网ip"></a>验证内网ip</h3><p>先看<code>系统信息-WAN信息</code>，如果信息中的IPV4地址是100开头的，那么基本就是内网IP。</p>
+<h2 id="ipv6设置">IPV6设置</h2>
+<h3 id="wan设置">WAN设置</h3>
+<p>IPV6正成为主流，不少网站和APP都开始支持IPV6。卖家只提供了光猫IPV4的设置教程，不过他告诉我，可以在光猫的WAN设置中，将协议类型改为<code>IPV4/IPV6</code>。我自己将IPV4的部分仍按原来卖家教程进行设置，IPV6依光猫默认参数，不做改动。没想到，一次就成功了。</p>
+<p><img
+src="中国电信更换光猫和设置emule（电骡）highid/WAN设置.png" /></p>
+<h3 id="wan信息">WAN信息</h3>
+<p>如果<code>系统信息-WAN信息</code>的显示和下图类似，状态是<code>Connected</code>，并且有IP地址，说明WAN设置成功。可以访问<a
+href="ipv6.baidu.com">百度IPV6</a>做下测试，如果页面没有异常提示，说明IPV6设置成功。</p>
+<p><img
+src="中国电信更换光猫和设置emule（电骡）highid/WAN信息.png" /></p>
+<h1 id="设置emule电骡">设置emule（电骡）</h1>
+<p>这次更换光猫最大的惊喜是<strong>新光猫能直接识别华为荣耀电力猫所连接的设备。</strong>
+由于家里网络布线的问题，我一直都用华为荣耀电力猫。电脑通过wifi连接电力猫，再通过电力猫连接光猫。因为网络是转接的，我之前要对老光猫进行设置，就必须将电脑拿到客厅去连接老光猫的wifi，才能进入老光猫后台。这次换新光猫之后，发现新光猫能识别电力猫所连接的所有设备，并直接给这些设备分配局域网地址。即便连接的是电力猫的无线网络，也能直接进光猫的后台。</p>
+<p>网络能直连，意味着可以做端口映射。我以前是emule（电骡）深度用户，老光猫被电信限制，普通管理员账户根本没办法设置端口映射，导致emule一直是low
+id，基本没法用。新光猫的卖家直接给了超级管理员账户，可以自由设置DMZ主机、端口映射和UPNP功能。</p>
+<h2 id="内网和公网ip问题">内网和公网IP问题</h2>
+<p>按照先前的经验，逐一设置DMZ主机、端口映射和UPnP，但TCP端口直连仍然失败，ed2k服务器连接的结果lowid。感谢伟大的互联网，有网友说是因为IPV4的公网地址不足，电信现在给用户分配的都是内网IP。如果是内网IP，你再怎么设置DMZ主机或者端口映射，emule也仍然是low
+id。</p>
+<h3 id="验证内网ip">验证内网ip</h3>
+<p>先看<code>系统信息-WAN信息</code>，如果信息中的IPV4地址是100开头的，那么基本就是内网IP。</p>
 <p>再查自己的外网IP。百度搜索直接输入IP，搜索结果会给出你的本机IP地址，如果本机IP地址和<code>系统信息-WAN信息</code>中的IP不一致，说明你现在就是内网IP。</p>
-<h3 id="更换公网IP"><a href="#更换公网IP" class="headerlink" title="更换公网IP"></a>更换公网IP</h3><p>直接联系电信10000，选择人工服务，告诉客服要将IP地址更换为公网IP。我因为是深夜打电话，客服没有权限，但他说技术人员会在第二天联系我。第二天，工作人员联系我，确认信息后，说24小时之内会将IP变更为公网IP，需要自行重启光猫。实际上不需要等这么长时间，我过了半小时后就重启光猫，IP地址就已经变了，不再是100开头，并且和百度搜索“IP”出来的本机IP地址相同。</p>
-<p><img src="%E4%B8%AD%E5%9B%BD%E7%94%B5%E4%BF%A1%E6%9B%B4%E6%8D%A2%E5%85%89%E7%8C%AB%E5%92%8C%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89highid/%E5%85%AC%E7%BD%91IP.png"></p>
-<h2 id="emule-high-id-设置"><a href="#emule-high-id-设置" class="headerlink" title="emule high id 设置"></a>emule high id 设置</h2><p>在光猫上设置端口映射的方法很多。我一开始没设置成功，因为我把所有端口映射的办法都一起用上了。实际上只要开启光猫中的<code>高级配置-应用-UPnP功能</code>就够了（emule版本：emule v0.50a Xtreme 8.0）。对应地，需要在emule软件<code>选项-连接</code>勾选<code>启用UPnP端口映射</code>。</p>
-<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>新光猫不管是有线速度还是wifi速度都比老光猫有明显提升。用有线连接老光猫测速，网速大概在80Mbps。换成新光猫后，网速能达到200Mbps。老光猫wifi速度在45Mbps左右，新光猫上升到90Mbps左右。</p>
+<h3 id="更换公网ip">更换公网IP</h3>
+<p>直接联系电信10000，选择人工服务，告诉客服要将IP地址更换为公网IP。我因为是深夜打电话，客服没有权限，但他说技术人员会在第二天联系我。第二天，工作人员联系我，确认信息后，说24小时之内会将IP变更为公网IP，需要自行重启光猫。实际上不需要等这么长时间，我过了半小时后就重启光猫，IP地址就已经变了，不再是100开头，并且和百度搜索“IP”出来的本机IP地址相同。</p>
+<p><img
+src="中国电信更换光猫和设置emule（电骡）highid/公网IP.png" /></p>
+<h2 id="emule-high-id-设置">emule high id 设置</h2>
+<p>在光猫上设置端口映射的方法很多。我一开始没设置成功，因为我把所有端口映射的办法都一起用上了。实际上只要开启光猫中的<code>高级配置-应用-UPnP功能</code>就够了（emule版本：emule
+v0.50a Xtreme
+8.0）。对应地，需要在emule软件<code>选项-连接</code>勾选<code>启用UPnP端口映射</code>。</p>
+<h1 id="小结">小结</h1>
+<p>新光猫不管是有线速度还是wifi速度都比老光猫有明显提升。用有线连接老光猫测速，网速大概在80Mbps。换成新光猫后，网速能达到200Mbps。老光猫wifi速度在45Mbps左右，新光猫上升到90Mbps左右。</p>
 
     </div>
 
@@ -333,7 +364,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%98%E8%B5%B7"><span class="nav-number">1.</span> <span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8B%E5%89%8D%E5%87%86%E5%A4%87"><span class="nav-number">2.</span> <span class="nav-text">事前准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%89%E7%8C%AB%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">光猫设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A5%E7%BD%91%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.1.</span> <span class="nav-text">入网设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IPV6%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.2.</span> <span class="nav-text">IPV6设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#WAN%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.2.1.</span> <span class="nav-text">WAN设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WAN%E4%BF%A1%E6%81%AF"><span class="nav-number">3.2.2.</span> <span class="nav-text">WAN信息</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AEemule%EF%BC%88%E7%94%B5%E9%AA%A1%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">设置emule（电骡）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E7%BD%91%E5%92%8C%E5%85%AC%E7%BD%91IP%E9%97%AE%E9%A2%98"><span class="nav-number">4.1.</span> <span class="nav-text">内网和公网IP问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AA%8C%E8%AF%81%E5%86%85%E7%BD%91ip"><span class="nav-number">4.1.1.</span> <span class="nav-text">验证内网ip</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E5%85%AC%E7%BD%91IP"><span class="nav-number">4.1.2.</span> <span class="nav-text">更换公网IP</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#emule-high-id-%E8%AE%BE%E7%BD%AE"><span class="nav-number">4.2.</span> <span class="nav-text">emule high id 设置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">5.</span> <span class="nav-text">小结</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%98%E8%B5%B7"><span class="nav-number">1.</span> <span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8B%E5%89%8D%E5%87%86%E5%A4%87"><span class="nav-number">2.</span> <span class="nav-text">事前准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%89%E7%8C%AB%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">光猫设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A5%E7%BD%91%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.1.</span> <span class="nav-text">入网设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ipv6%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.2.</span> <span class="nav-text">IPV6设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#wan%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.2.1.</span> <span class="nav-text">WAN设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#wan%E4%BF%A1%E6%81%AF"><span class="nav-number">3.2.2.</span> <span class="nav-text">WAN信息</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AEemule%E7%94%B5%E9%AA%A1"><span class="nav-number">4.</span> <span class="nav-text">设置emule（电骡）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%85%E7%BD%91%E5%92%8C%E5%85%AC%E7%BD%91ip%E9%97%AE%E9%A2%98"><span class="nav-number">4.1.</span> <span class="nav-text">内网和公网IP问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AA%8C%E8%AF%81%E5%86%85%E7%BD%91ip"><span class="nav-number">4.1.1.</span> <span class="nav-text">验证内网ip</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%8D%A2%E5%85%AC%E7%BD%91ip"><span class="nav-number">4.1.2.</span> <span class="nav-text">更换公网IP</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#emule-high-id-%E8%AE%BE%E7%BD%AE"><span class="nav-number">4.2.</span> <span class="nav-text">emule high id 设置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">5.</span> <span class="nav-text">小结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -347,14 +378,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -385,7 +422,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Chen Feng</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v6.0.0
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v6.3.0
   </div>
   <span class="post-meta-divider">|</span>
   <div class="theme-info">主题 – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.7.0
